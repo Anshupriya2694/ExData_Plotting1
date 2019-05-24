@@ -20,7 +20,7 @@ date_time = as.POSIXct(paste(household_power_consumption$Date,
                              household_power_consumption$Time))
 
 #Plotting
-png("Plots Png/plot3.png")
+png("plot3.png")
 plot(date_time, household_power_consumption$Sub_metering_1, 
      type="l", xlab="", ylab="Energy sub metering")
 lines(date_time, household_power_consumption$Sub_metering_2, col = "red")

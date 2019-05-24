@@ -20,7 +20,7 @@ date_time = as.POSIXct(paste(household_power_consumption$Date,
                                household_power_consumption$Time))
 
 #Plotting
-png("Plots Png/plot2.png")
+png("plot2.png")
 plot(date_time, household_power_consumption$Global_active_power, 
      type="l", xlab="", ylab="Global Active Power (kilowatts)")
 

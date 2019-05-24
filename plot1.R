@@ -13,7 +13,7 @@ household_power_consumption = household_power_consumption%>%
   filter(Date == "2007-02-01" | Date == "2007-02-02")
 
 #Plotting in a png file
-png("Plots Png/plot1.png", width = 480, height = 480)
+png("plot1.png", width = 480, height = 480)
 hist(household_power_consumption$Global_active_power, col = "red", 
      xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 dev.off()
